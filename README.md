@@ -54,7 +54,7 @@ allow-query {192.168.0.0/24;
 };
 ````
 - cd to your src directory `cd /usr/local/src/`
-- Download generate-zonefile.sh `wget https://raw.githubusercontent.com/fsbruva/block-ads-via-dns/master/generate-zonefile.sh`
+- Download generate-zonefile.sh `fetch https://raw.githubusercontent.com/fsbruva/block-ads-via-dns/master/generate-zonefile.sh`
 - Make it executable `chmod +x generate-zonefile.sh`
 - Run generate-zonefile.sh `./generate-zonefile.sh`
 
