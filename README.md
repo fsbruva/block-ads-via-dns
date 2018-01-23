@@ -1,8 +1,8 @@
 # Block ads and malware via local DNS server
-# Fork of https://github.com/mueller-ma/block-ads-via-dns
-# Adapted to run on FreeBSD using tcsh (no dependencies), and to redirect
-# all traffic to local webserver (192.168.0.10 in example).
-# This method is described here: https://charlieharvey.org.uk/page/adblocking_with_bind_apache
+Fork of https://github.com/mueller-ma/block-ads-via-dns
+Adapted to run on FreeBSD using tcsh (no dependencies), and to redirect
+all traffic to local webserver (192.168.0.10 in example).
+This method of adblocking is described [here](https://charlieharvey.org.uk/page/adblocking_with_bind_apache)
 
 # Installation
 ## FreeBSD ( or Nas4Free jail)
