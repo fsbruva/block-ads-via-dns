@@ -23,7 +23,8 @@ $TTL    86400   ; one day
 @       IN      A       192.168.0.10
 *       IN      A       192.168.0.10
 ````
-- The above NS and host values are arbitrary.
+- The above NS and host NAME values are arbitrary. In this example, the
+webserver is listening at 192.168.0.10. 
 - Your /usr/local/etc/namedb/named.conf.options should contain something like this, 
 in addition to your normal zone/slave/master setup config:
 ````
@@ -57,6 +58,11 @@ allow-query {192.168.0.0/24;
 - Download generate-zonefile.sh `fetch https://raw.githubusercontent.com/fsbruva/block-ads-via-dns/master/generate-zonefile.sh`
 - Make it executable `chmod +x generate-zonefile.sh`
 - Run generate-zonefile.sh `./generate-zonefile.sh`
+
+## Webserver
+- Place the www_server/no.gif and www_server/no.html files in /usr/local/www/adware
+- Place the www_server/adware.conf in /usr/local/etc/apache24/Includes
+- Make sure your main apache httpd.conf is listening on 192.168.0.10, in addition to the other IPs.
 
 ## Router / DHCP Server
 - Give your DNS server a static IP, and add to the DCHP server config
